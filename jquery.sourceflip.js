@@ -178,7 +178,7 @@
         'afterFlip' : false,
         'beforeFlip' : false,
         'container' : $(window),
-        'defaultAttr' : 'data-src',
+        'defaultAttr' : 'data-default',
         'onLoad'    : true,
         'onResize'  : false,
         'resizeSensitivity' : 100
