@@ -34,7 +34,7 @@ You can directly include it via CDN if you want to
 
 ```html
     <script type="text/javascript" src="/sourceflip/jquery.sourceflip.js"></script>
-``
+```
 
 **4 Give your images additional sources by adding html5 "data"-attributes**
 
