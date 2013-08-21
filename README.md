@@ -14,7 +14,7 @@ Features
 - [x] Define your own bunch of pics to flip!
 - [x] Possibility to define after- and before-functions!
 - [x] Flips your sources by resizing the browser-window (only if you want it)!
-- [x] (Probably) brings peace to mother earth and (probably) makes the internet a better place!
+- [x] *Probably* brings peace to mother earth and *probably* makes the internet a better place!
 
 
 Usage
@@ -26,18 +26,24 @@ Usage
 
 You can directly include it via CDN if you want to
 
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+```html
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+```
 
 **3 Include the script in your website**
 
-        <script type="text/javascript" src="/sourceflip/jquery.sourceflip.js"></script>
+```html
+    <script type="text/javascript" src="/sourceflip/jquery.sourceflip.js"></script>
+``
 
 **4 Give your images additional sources by adding html5 "data"-attributes**
 
 You definitely need the attributes "src" and "data-default"
 Now feel free to define your own attributes each for your custom responsive steps - it's valid with html5!
 
-        <img src="default.jpg" alt="" data-default="default.jpg" data-mobile="mobile.jpg" data-tablet="tablet.jpg" data-desktop="desktop.jpg">
+```html
+    <img src="default.jpg" alt="" data-default="default.jpg" data-mobile="mobile.jpg" data-tablet="tablet.jpg" data-desktop="desktop.jpg">
+```
 
 **5 Define the conditions and set some options**
 
@@ -124,8 +130,8 @@ Options
 
 Usage | Option | Possible values | Default | Description
 --- | --- | --- | --- | ---
-**required** | onLoad | bool | true | Will images be flipped on site-load?
-**required** | onResize | bool | false | Will images be flipped on browser window resize? (will also work on rotation of mobile/tablet-devices)
+*required* | onLoad | bool | true | Will images be flipped on site-load?
+*required* | onResize | bool | false | Will images be flipped on browser window resize? (will also work on rotation of mobile/tablet-devices)
 *optional* | afterFlip | function or false | false | Function which is called after flipping
 *optional* | beforeFlip | function or false | false | Function which is called before flipping
 *optional* | container | object or string | $(window) | The width of this element will be compared with the conditions - you can use $('#container') or '#container'
