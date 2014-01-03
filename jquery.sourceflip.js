@@ -1,6 +1,6 @@
 /**
  * sourceFlip
- * Version: 1.0.0
+ * Version: 1.1.0
  * Description: Probably the best jQuery Responsive-Image Plugin in the world
  * Requires: jQuery 1.8+
  * Author: Christoph Stäblein (http://www.pixelkrieg.net)
@@ -123,7 +123,12 @@
         if (jQuery.type(container) == 'object') {
 
             var flipAttr = options.defaultAttr;
-            var width = container.width();
+
+            if (container.prop("tagName") == undefined) {
+                var width = $.fn.sourceFlip.getViewportWidth();
+            } else {
+                var width = container.width();
+            }
 
             if (jQuery.isArray(conditions)) {
 
@@ -172,6 +177,15 @@
         return flipAttr;
     }
 
+    $.fn.sourceFlip.getViewportWidth = function() {
+        var e = window, a = 'inner';
+        if (!('innerWidth' in window )) {
+            a = 'client';
+            e = document.documentElement || document.body;
+        }
+        // return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+        return e[ a+'Width' ];
+    }
 
     // Default settings
     $.fn.sourceFlip.defaults = {
