@@ -1,0 +1,19 @@
+{
+    "name": "sourceFlip",
+    "description": "SourceFlip is a light jQuery Plugin which automagically makes your images responsive. Just define a few conditions, set your src-attributes and you are off!",
+    "keywords": [ "source", "flip", "src", "jquery", "javascript", "responsive", "img", "attributes" ],
+    "authors": [
+        { "name": "Christoph Stäblein", "email": "info@pixelkrieg.net", "homepage": "http://www.pixelkrieg.net" }
+    ],
+    "license": "WTFPL",
+    "homepage": "https://github.com/pixelkrieg/sourceFlip",
+    "version": "1.1.0",
+    "main": "jquery.sourceflip.js",
+    "dependencies": {
+        "jquery": ">=1.8.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/pixelkrieg/sourceFlip.git"
+    }
+}
